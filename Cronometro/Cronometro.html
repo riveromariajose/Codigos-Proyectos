@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cronometro</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="m-0 p-0 t-0  bg-rose-200">
+        <div class="w-[100%] flex justify-center items-center p-36">
+            <div class="w-[500px] h-[100%] flex flex-col justify-center items-center bg-rose-500 border-2 border-black rounded-xl gap-2 ">
+                <div class="w-[300px] border-2 border-black rounded-2xl mt-6">
+                    <h1 class=" text-4xl italic font-bold  p-6  text-center">Cronometro</h1>
+                </div>
+                <div id="Cronometro">
+                    <p class="text-4xl italic font-bold">
+                        <span id="minutos">00</span>:
+                        <span id="segundos">00</span>:
+                        <span id="milisegundos">00</span>
+                    </p>
+                </div>
+                <div class="pb-[15px] ">
+                    <button id="Iniciar">
+                        <img class="w-[70px] hover:bg-black/25 rounded-full " src="./Iconos/Play.png" alt="">
+                    </button>
+                    <button id="Detener">
+                        <img class="w-[70px] hover:bg-black/25 rounded-full" src="./Iconos/Pausa.png" alt="">
+                    </button>
+                    <button id="Reiniciar">
+                        <img class="w-[70px] hover:bg-black/25 rounded-full" src="./Iconos/Reiniciar.png" alt="">
+                    </button>
+                    <button id="Registros">
+                        <img class="w-[70px] hover:bg-black/25 rounded-full" src="./Iconos/Registros.png" alt="">
+                    </button>
+                </div>
+                <div>
+                    <div id="lista" class="w-[170px] min-h-[50px] max-h-[300px] overflow-auto"></div>
+                </div>
+            </div>
+        </div>
+        <main class="flex flex-col items-center justify-center gap-6 w-[100%] h-[100%]  text-black">
+            
+        </main>
+    </body>
+    <script src="./Cronometro.js"></script>
+</html>
